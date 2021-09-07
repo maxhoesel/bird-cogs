@@ -1,0 +1,13 @@
+{
+    "author": [
+        "maxhoesel"
+    ],
+    "install_msg": "Thank you for installing my cogs! See the projects GitHub if you have any questions: <https://github.com/maxhoesel/bird-cogs>",
+    "name": "bird-cogs",
+    "short": "AAA and other high-quality cogs (TBD)",
+    "description": "A repository that currently only contains a single cog - AAA. You can probably already guess what it does.",
+    "tags": [
+        "AAA",
+        "Fun"
+    ]
+}

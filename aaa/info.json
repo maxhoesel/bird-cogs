@@ -1,0 +1,26 @@
+{
+    "author": [
+        "maxhoesel"
+    ],
+    "description": "Let Redbot AAA for you. The bot scream into the void/channel whenever you call this command",
+    "disabled": false,
+    "end_user_data_statement": "No personal data is stored by this cog.",
+    "hidden": false,
+    "install_msg": "The command group is `[p]aaa`. Remember that role names are case sensitive.",
+    "max_bot_version": "0.0.0",
+    "min_bot_version": "3.4.0",
+    "min_python_version": [
+        3,
+        8,
+        0
+    ],
+    "name": "RoleTools",
+    "permissions": [],
+    "required_cogs": {},
+    "requirements": [],
+    "short": "Make the bot scream",
+    "tags": [
+        "fun"
+    ],
+    "type": "COG"
+}
