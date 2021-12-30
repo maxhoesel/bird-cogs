@@ -16,31 +16,31 @@ class AAA(commands.Cog):
 
     @commands.command(name="aaaa")
     async def aaaa(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     @commands.command(name="aaaaa")
     async def aaaaa(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     @commands.command(name="aaaaaa")
     async def aaaaaa(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     @commands.command(name="AAA")
     async def AAA(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     @commands.command(name="AAAA")
     async def AAAA(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     @commands.command(name="AAAAA")
     async def AAAAA(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     @commands.command(name="AAAAAA")
     async def AAAAAA(self, ctx):
-        self.aaa(ctx)
+        await ctx.send(get_response("aaa"))
 
     # yarr
     @commands.command(name="yarr")
@@ -49,4 +49,4 @@ class AAA(commands.Cog):
 
     @commands.command(name="YARR")
     async def YARR(self, ctx):
-        self.yarr(ctx)
+        await ctx.send(get_response("yarr"))
