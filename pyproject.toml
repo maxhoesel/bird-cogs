@@ -16,13 +16,15 @@ pytest = "^6.2.5"
 pylint = "^2.12.2"
 Red-DiscordBot = "^3.4.14"
 autopep8 = "^1.6.0"
+pytest-cov = "^3.0.0"
+pytest-xdist = {extras = ["psutil"], version = "^2.5.0"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-addopts="-nauto --basetemp=.pytest_tmp --cov=app --cov-report=html --cov-report=term --cov-report=xml"
+addopts="-nauto --basetemp=.pytest_tmp --cov=aaa --cov-report=html --cov-report=term --cov-report=xml"
 
 [tool.autopep8]
 max_line_length = 120
