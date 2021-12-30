@@ -1,22 +1,6 @@
-import random
-from typing import List
-
 from redbot.core import commands
 
-from .responses import RESPONSES
-
-
-class Response:
-    def __init__(self, start: str, repeat_seq: str, end: str, max_repeats: int = 20):
-        self.start = start
-        self.repeat_seq = repeat_seq
-        self.max_repeats = max_repeats
-        self.end = end
-
-    def get_response(self):
-        repeat = "".join(self.repeat_seq * random.randint(1, self.max_repeats))
-        response = f"{self.start}{repeat}{self.end}"
-        return response
+from .responses import get_response
 
 
 class AAA(commands.Cog):
@@ -24,11 +8,45 @@ class AAA(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-        self.responses: List[Response] = []
-        for response in RESPONSES:
-            self.responses.append(Response(**response))
 
-    @commands.command()
+    # aaa
+    @commands.command(name="aaa")
     async def aaa(self, ctx):
-        response_obj = random.choice(self.responses)
-        await ctx.send(response_obj.get_response())
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="aaaa")
+    async def aaaa(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="aaaaa")
+    async def aaaaa(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="aaaaaa")
+    async def aaaaaa(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="AAA")
+    async def AAA(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="AAAA")
+    async def AAAA(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="AAAAA")
+    async def AAAAA(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    @commands.command(name="AAAAAA")
+    async def AAAAAA(self, ctx):
+        await ctx.send(get_response("aaa"))
+
+    # yarr
+    @commands.command(name="yarr")
+    async def yarr(self, ctx):
+        await ctx.send(get_response("yarr"))
+
+    @commands.command(name="YARR")
+    async def YARR(self, ctx):
+        await ctx.send(get_response("yarr"))
