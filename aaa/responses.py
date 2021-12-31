@@ -27,6 +27,11 @@ _RESPONSES = {
         "{mod}AYE MATEY{y}!{mod}".format(mod=_get_modifier(), y=''.join('Y' * random.randint(0, 3))),
         "{mod}YO HO AND A BOTTLE OF {obj}{mod}!".format(mod=_get_modifier(), obj=random.choice([
             "RUM", "BASS", "BIRD", "PARKING FLUID"])),
-        "YARR MATE! DID YOU KNOW: :fire: :bird: + :ice_cube: :bird: => :boom:"
+        "**YARR MATEY!** DID YOU KNOW: {fact}".format(fact=random.choice([
+            ":fire: :bird: + :ice_cube: :bird: => :boom:",
+            "Brigantine wrecks make up more than 30%% of a healthy pirate breakfast!",
+            "Pet firebirds have been outlawed on Gold Hoarders ships ever since 'that one' incident.",
+            "Thieves haven was originally multiple islands, but they are now glued together into one by the tears of reaper players."
+        ]))
     ]
 }
