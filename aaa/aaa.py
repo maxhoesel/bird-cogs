@@ -1,4 +1,5 @@
 from redbot.core import commands
+from redbot.core.bot import Red
 
 from .responses import get_response
 
@@ -6,7 +7,7 @@ from .responses import get_response
 class AAA(commands.Cog):
     """AAA. Make the bot scream."""
 
-    def __init__(self, bot):
+    def __init__(self, bot: Red):
         self.bot = bot
 
     # aaa
